@@ -4,7 +4,7 @@
  * @Author: dlg
  * @Date: 2020-10-13 16:41:42
  * @LastEditors: dlg
- * @LastEditTime: 2020-10-13 18:46:52
+ * @LastEditTime: 2020-12-21 14:34:38
  */
 import { app, BrowserWindow } from 'electron'
 
@@ -26,9 +26,9 @@ function createWindow() {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    height: 563,
-    useContentSize: true,
     width: 1000,
+    height: 600,
+    useContentSize: true,
     // 下面代码解决最新版本electron导致报错问题
     webPreferences: {
       nodeIntegration: true, // 启用节点集成，默认false,手动修改为true

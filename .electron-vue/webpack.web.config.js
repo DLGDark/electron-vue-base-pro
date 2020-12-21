@@ -96,8 +96,7 @@ let webConfig = {
     new webpack.DefinePlugin({
       'process.env.IS_WEB': 'true'
     }),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.HotModuleReplacementPlugin()
   ],
   output: {
     filename: '[name].js',

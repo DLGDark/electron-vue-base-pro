@@ -135,8 +135,7 @@ let rendererConfig = {
         ? path.resolve(__dirname, '../node_modules')
         : false
     }),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.HotModuleReplacementPlugin()
   ],
   output: {
     filename: '[name].js',

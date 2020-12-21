@@ -1,3 +1,11 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: dlg
+ * @Date: 2020-12-18 16:54:30
+ * @LastEditors: dlg
+ * @LastEditTime: 2020-12-21 14:38:08
+ */
 'use strict'
 
 process.env.BABEL_ENV = 'main'
@@ -37,9 +45,7 @@ let mainConfig = {
     libraryTarget: 'commonjs2',
     path: path.join(__dirname, '../dist/electron')
   },
-  plugins: [
-    new webpack.NoEmitOnErrorsPlugin()
-  ],
+  plugins: [],
   resolve: {
     extensions: ['.js', '.json', '.node']
   },
