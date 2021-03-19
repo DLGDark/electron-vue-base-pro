@@ -4,7 +4,7 @@
  * @Author: dlg
  * @Date: 2020-12-18 16:54:30
  * @LastEditors: dlg
- * @LastEditTime: 2020-12-21 14:38:08
+ * @LastEditTime: 2021-03-19 16:39:26
  */
 'use strict'
 
@@ -25,6 +25,17 @@ let mainConfig = {
   ],
   module: {
     rules: [
+      {
+        test: /\.(js)$/,
+        enforce: 'pre',
+        exclude: /node_modules/,
+        use: {
+          loader: 'eslint-loader',
+          options: {
+            formatter: require('eslint-friendly-formatter')
+          }
+        }
+      },
       {
         test: /\.js$/,
         use: 'babel-loader',
