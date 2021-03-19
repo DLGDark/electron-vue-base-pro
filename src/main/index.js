@@ -4,9 +4,12 @@
  * @Author: dlg
  * @Date: 2020-10-13 16:41:42
  * @LastEditors: dlg
- * @LastEditTime: 2020-12-21 14:34:38
+ * @LastEditTime: 2021-03-18 15:41:49
  */
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, Menu } from 'electron'
+
+// 禁用默认菜单
+Menu.setApplicationMenu(null);
 
 /**
  * Set `__static` path to static files in production
